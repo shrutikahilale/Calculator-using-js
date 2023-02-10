@@ -17,12 +17,15 @@ body {
 
 .container {
     margin: 40px;
-    background-color: rgb(35, 0, 16);
+    /* background-color: rgb(35, 0, 16); */
     width: 400px;
     height: auto;
     display: flex;
     flex-direction: column;
     border-radius: 14px;
+    border: 1px solid rgb(218, 218, 218);
+
+    color: #555;
 }
 
 .grid {
@@ -35,17 +38,14 @@ body {
 .grid-items {
     display: flex;
     justify-content: space-around;
-    margin: 5px;
 }
 
 .item {
-    background-color:crimson;
-    width: 100%;
-    margin: 0 10px;
+    background-color: #d6d6d6;
+    margin: 5px 10px 10px 10px;
     padding: 20px 0;
-
+    width: 100%;
     text-align: center;
-    border: 1px solid white;
     border-radius:14px;
     
     cursor: pointer;
@@ -56,6 +56,21 @@ body {
     top: 2px;
     box-shadow: inset 5px 5px rgb(76, 4, 18);
     border: none;
+    color: black;
+}
+
+#clear-btn:active {
+    /* top: 2px; */
+    box-shadow: inset 5px 5px rgb(0, 98, 255);
+    background-color: rgb(65, 138, 255);
+    /* border: none; */
+}
+
+#delete-btn:active {
+    /* top: 2px; */
+    box-shadow: inset 5px 5px rgb(216, 0, 61);
+    background-color: rgb(255, 41, 102);
+    /* border: none; */
 }
 
 .input-box {
@@ -68,4 +83,73 @@ body {
     border-radius: 13px;
 
     font-size: 24px;
+}
+
+.numbers-row {
+    display: flex;
+    /* color: white; */
+    /* background-color: aquamarine; */
+    font-size: 28px;
+
+    justify-content: space-around;
+}
+
+.numbers-col {
+    background-color: #dedede;
+    padding: 12px 30px;
+    margin: 10px;
+    border-radius:14px;
+    position: relative;
+    cursor: pointer;
+}
+
+.numbers-col:active {
+    top: 2px;
+    box-shadow: inset 5px 5px #a3a3a3;
+    background-color: #d0d0d0;
+    border: none;
+    color: black;
+}
+
+.container-2 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.grid-operators{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.operators{
+    background-color: #c0c0c0;
+    margin: 4px 0px;
+    padding: 10px 0;
+    width: 60%;
+    text-align: center;
+    border-radius:14px;
+    
+    cursor: pointer;
+    position: relative;
+
+    font-size: 24px;
+
+    cursor: pointer;
+}
+
+.operators:active{
+    top: 2px;
+    box-shadow: inset 5px 5px #fdca00;
+    background-color: #ffdc4e;
+    border: none;
+    color: black;
+}
+
+#enter-btn:active {
+    top: 2px;
+    box-shadow: inset 5px 5px #48ff00;
+    background-color: #81ff50;
+    border: none;
+    color: black;
 }
